@@ -1,7 +1,23 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #62374e;
+  width: 100vw;
+  height: 100vh;
+  background-color: #62374e;
+}
+/* Colors Used: #62374e #fdc57b */
+.flex-container {
+  display: flex;
+  background-color: #62374e;
 }
 
-/* Colors Used: #62374e #fdc57b */
+.flex-container > div {
+  background-color: #fdc57b;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.flex-container > *:first-child {
+  color: red;
+}
+.flex-container .selected {
+  align-self: center;
+}
